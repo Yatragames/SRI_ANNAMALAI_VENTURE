@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Food Supply (Brokered Orders) | Sri Annamalai Venture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #2c6e49 0%, #4c956c 100%);
+            color: white;
+            padding: 30px 0;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        .logo-text h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .header-badge {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* Page Title */
+        .page-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+            .page-title h2 {
+                font-size: 2.2rem;
+                color: #2c6e49;
+                margin-bottom: 10px;
+                position: relative;
+                display: inline-block;
+            }
+
+                .page-title h2:after {
+                    content: '';
+                    position: absolute;
+                    width: 70px;
+                    height: 4px;
+                    background-color: #ff9e00;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 2px;
+                }
+
+            .page-title p {
+                color: #666;
+                max-width: 700px;
+                margin: 20px auto 0;
+                font-size: 1.1rem;
+            }
+
+        /* Terms Content */
+        .terms-container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .term-item {
+            margin-bottom: 35px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            position: relative;
+        }
+
+            .term-item:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+
+        .term-number {
+            position: absolute;
+            top: -5px;
+            left: -15px;
+            background-color: #4c956c;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 8px rgba(76, 149, 108, 0.3);
+        }
+
+        .term-title {
+            font-size: 1.3rem;
+            color: #2c6e49;
+            margin-bottom: 10px;
+            padding-left: 30px;
+        }
+
+        .term-content {
+            padding-left: 30px;
+            color: #555;
+        }
+
+        .term-highlight {
+            background-color: #fff9e6;
+            padding: 15px;
+            border-left: 4px solid #ff9e00;
+            margin: 10px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 30px 0;
+            border-radius: 20px 20px 0 0;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .company-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #ff9e00;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+            .contact-info i {
+                margin-right: 8px;
+                color: #4c956c;
+            }
+
+        .acceptance-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+
+            .acceptance-box p {
+                font-size: 0.95rem;
+                margin-bottom: 15px;
+            }
+
+        .acceptance-btn {
+            background-color: #ff9e00;
+            color: #2c3e50;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+            .acceptance-btn:hover {
+                background-color: #e88f00;
+                transform: translateY(-2px);
+            }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .terms-container {
+                padding: 25px 20px;
+            }
+
+            .term-number {
+                left: -5px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .page-title h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .acceptance-box, .acceptance-btn {
+                display: none;
+            }
+
+            .terms-container {
+                box-shadow: none;
+            }
+
+            header {
+                background: #2c6e49 !important;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Sri Annamalai Venture</h1>
+                    <p>Food Supply Brokerage Services</p>
+                </div>
+            </div>
+            <div class="header-badge">
+                <i class="fas fa-file-contract"></i> Terms & Conditions
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Page Title -->
+        <div class="page-title">
+            <h2>TERMS & CONDITIONS</h2>
+            <p>Food Supply (Brokered Orders)</p>
+            <p class="page-subtitle">Please read these terms carefully before placing an order</p>
+        </div>
+
+        <!-- Terms & Conditions Content -->
+        <div class="terms-container">
+            <!-- Term 1 -->
+            <div class="term-item">
+                <div class="term-number">1</div>
+                <h3 class="term-title">Role of Broker</h3>
+                <div class="term-content">
+                    <p>Sri Annamalai Venture acts as a broker/facilitator between the food supplier and the buyer. Actual food preparation and supply are carried out by the respective vendor.</p>
+                </div>
+            </div>
+
+            <!-- Term 2 -->
+            <div class="term-item">
+                <div class="term-number">2</div>
+                <h3 class="term-title">Order Confirmation</h3>
+                <div class="term-content">
+                    <p>Orders are processed only after final confirmation from the buyer regarding quantity, price, and delivery schedule.</p>
+                </div>
+            </div>
+
+            <!-- Term 3 -->
+            <div class="term-item">
+                <div class="term-number">3</div>
+                <h3 class="term-title">Perishable Goods</h3>
+                <div class="term-content">
+                    <p>Food items are perishable in nature. Once delivered and accepted, no return, replacement, or refund will be entertained.</p>
+                    <div class="term-highlight">
+                        <i class="fas fa-exclamation-triangle"></i> Important: Due to the perishable nature of food items, claims after acceptance cannot be processed.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Term 4 -->
+            <div class="term-item">
+                <div class="term-number">4</div>
+                <h3 class="term-title">Quality & Compliance</h3>
+                <div class="term-content">
+                    <p>The supplier is responsible for food quality and statutory compliance at the time of dispatch. The broker shall not be held liable for changes in quality after delivery.</p>
+                </div>
+            </div>
+
+            <!-- Term 5 -->
+            <div class="term-item">
+                <div class="term-number">5</div>
+                <h3 class="term-title">Storage & Handling</h3>
+                <div class="term-content">
+                    <p>Responsibility for proper storage, temperature control, and handling of food items rests entirely with the buyer after delivery.</p>
+                </div>
+            </div>
+
+            <!-- Term 6 -->
+            <div class="term-item">
+                <div class="term-number">6</div>
+                <h3 class="term-title">Delivery</h3>
+                <div class="term-content">
+                    <p>Delivery timelines are coordinated based on supplier availability. Delays due to traffic, weather, or unforeseen circumstances shall not attract penalties.</p>
+                </div>
+            </div>
+
+            <!-- Term 7 -->
+            <div class="term-item">
+                <div class="term-number">7</div>
+                <h3 class="term-title">Payment Terms</h3>
+                <div class="term-content">
+                    <p>Full payment must be made as per agreed terms mentioned in the invoice. Delays in payment may result in suspension of future orders.</p>
+                </div>
+            </div>
+
+            <!-- Term 8 -->
+            <div class="term-item">
+                <div class="term-number">8</div>
+                <h3 class="term-title">Cancellations</h3>
+                <div class="term-content">
+                    <p>Order cancellation is not permitted once food preparation or dispatch has commenced.</p>
+                </div>
+            </div>
+
+            <!-- Term 9 -->
+            <div class="term-item">
+                <div class="term-number">9</div>
+                <h3 class="term-title">Damages & Shortage</h3>
+                <div class="term-content">
+                    <p>Any shortage or visible damage must be reported at the time of delivery. Claims raised later will not be considered.</p>
+                    <div class="term-highlight">
+                        <i class="fas fa-clipboard-check"></i> Please inspect your order upon delivery and note any issues with the delivery personnel.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Term 10 -->
+            <div class="term-item">
+                <div class="term-number">10</div>
+                <h3 class="term-title">Limitation of Liability</h3>
+                <div class="term-content">
+                    <p>The broker's liability, if any, shall be limited strictly to the brokerage value mentioned in the invoice.</p>
+                </div>
+            </div>
+
+            <!-- Term 11 -->
+            <div class="term-item">
+                <div class="term-number">11</div>
+                <h3 class="term-title">Jurisdiction</h3>
+                <div class="term-content">
+                    <p>All disputes arising from this transaction shall be subject to Bangalore jurisdiction only.</p>
+                </div>
+            </div>
+
+            <!-- Term 12 -->
+            <div class="term-item">
+                <div class="term-number">12</div>
+                <h3 class="term-title">Acceptance</h3>
+                <div class="term-content">
+                    <p>Acceptance of goods or services implies agreement to these Terms & Conditions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-content">
+            <div class="company-info">
+                <h3>Sri Annamalai Venture</h3>
+                <p>Food Supply Brokerage Services</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                    <p><i class="fas fa-envelope"></i> contact@srianamalaiventure.com</p>
+                </div>
+            </div>
+
+            <div class="acceptance-box">
+                <p><i class="fas fa-info-circle"></i> By accepting these terms, you acknowledge that you have read, understood, and agree to be bound by all the terms and conditions stated above.</p>
+                <button class="acceptance-btn" onclick="acceptTerms()">
+                    <i class="fas fa-check-circle"></i> I Accept These Terms & Conditions
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to handle terms acceptance
+        function acceptTerms() {
+        const btn = document.querySelector('.acceptance-btn');
+        const originalText = btn.innerHTML;
+
+        btn.innerHTML = '<i class="fas fa-check"></i> Terms Accepted!';
+        btn.style.backgroundColor = '#4c956c';
+        btn.style.color = 'white';
+
+        // Show confirmation message
+        alert('Thank you for accepting the Terms & Conditions. You may proceed with your order.');
+
+        // Reset button after 3 seconds
+        setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.backgroundColor = '#ff9e00';
+        btn.style.color = '#2c3e50';
+        }, 3000);
+        }
+
+        // Print functionality
+        function printTerms() {
+        window.print();
+        }
+
+        // Add print button dynamically for better UX
+        document.addEventListener('DOMContentLoaded', function() {
+        const pageTitle = document.querySelector('.page-title');
+        const printBtn = document.createElement('button');
+        printBtn.innerHTML = '<i class="fas fa-print"></i> Print Terms';
+        printBtn.style.cssText = `
+        background: #4c956c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        `;
+        printBtn.onmouseover = function() { this.style.opacity = '0.9'; };
+        printBtn.onmouseout = function() { this.style.opacity = '1'; };
+        printBtn.onclick = printTerms;
+
+        pageTitle.appendChild(printBtn);
+        });
+    </script>
+</body>
+</html>
